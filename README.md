@@ -7,6 +7,7 @@ Workshop ideas can be used as training exercises, hack day projects, starter pro
 Great projects:
 
 * Have multiple correct answers
+* Have a begin and end state defined with plenty of room for the learner to find his or her way to the end state.  These are intentionally loosely defined.
 * Can be facilitated or completed as self-study
 * Can be extended in multiple directions based on learning objectives
 
