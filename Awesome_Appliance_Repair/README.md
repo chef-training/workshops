@@ -66,7 +66,7 @@ Here are some examples of this project being implemented by other workshop parti
 * Working, but not repeatable implementation with Pull Requests that show additional work to make this better. [Franklin Webber](https://github.com/burtlo/chef-aar)
 * Another working but not repeatable implementation.  [John Fitzpatrick](https://github.com/johnfitzpatrick/aar)
 * Chef to manage pre-requisites and then run the AARinstall.py. [Elon Bar-Evan](https://github.com/elon01/aar)
-* Lots of bad practice with at least as many intentions on refactoring.  [Chris Webber](https://github.com/cwebberOps/aar-cookbook)
+* A start with intentions on refactoring.  [Chris Webber](https://github.com/cwebberOps/aar-cookbook)
 
 ## To Do
 
