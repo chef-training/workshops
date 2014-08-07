@@ -11,6 +11,9 @@ Great projects:
 * Can be facilitated or completed as self-study
 * Can be extended in multiple directions based on learning objectives
 
+## Projects Included
+
+* Awesome Appliance Repair - A simple, python-based web application that utilizes Apache for a web server and MySQL for a database.
 
 ## Contributing
 
