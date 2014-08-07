@@ -20,8 +20,7 @@ Pull requests are merged via Github, you can find the documentation about how to
 
 Author:: Nathen Harvey (<nharvey@getchef.com>)
 
-```text
+
 Copyright:: 2014 Chef Software, Inc.
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
-```
