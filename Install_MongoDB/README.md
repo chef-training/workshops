@@ -56,6 +56,8 @@ You can take expand on this project a number of ways including:
 
 Here are some examples of this project being implemented by other workshop participants.  (See the "Contributing" section of the README for details on how to add your example.) 
 
+* a working solution [Nathen Harvey](https://github.com/nathenharvey/install_mongo)
+
 
 ## To Do
 
