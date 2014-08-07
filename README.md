@@ -14,6 +14,7 @@ Great projects:
 ## Projects Included
 
 * Awesome Appliance Repair - A simple, python-based web application that utilizes Apache for a web server and MySQL for a database.
+* Install MongoDB - A starter project for MongoDB.  This simply installs the software on the target system.
 
 ## Contributing
 
