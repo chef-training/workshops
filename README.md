@@ -1,4 +1,26 @@
-workshops
-=========
+# Chef Workshops
 
-Ideas for workshops and hackdays
+After completing some initial training on Chef, learners are often wondering where to go next to be successful with Chef.  This repository is a collection of ideas suitable for answering that question.
+
+Workshop ideas can be used as training exercises, hack day projects, starter projects, etc.  
+
+Great projects:
+
+* Have multiple correct answers
+* Can be facilitated or completed as self-study
+* Can be extended in multiple directions based on learning objectives
+
+
+## Contributing
+
+Pull requests are merged via Github, you can find the documentation about how to fork a repository and start contributing here [https://help.github.com/articles/fork-a-repo](https://help.github.com/articles/fork-a-repo).
+
+## License & Authors
+
+Author:: Nathen Harvey (<nharvey@getchef.com>)
+
+```text
+Copyright:: 2014 Chef Software, Inc.
+
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+```
