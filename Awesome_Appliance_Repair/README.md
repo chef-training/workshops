@@ -8,6 +8,7 @@ You goal with this project is to transform [AARinstall.py](https://github.com/le
 
 After successfully completing this workshop, you will be able to:
 
+* Build something in Chef with very little guidance
 * Write custom Chef recipes.
 * Use the [Chef Documentation](http://docs.opscode.com) to identify and use resources that will help you model the desired state of your infrastructure.
 * Include [guards](http://docs.getchef.com/chef/resources.html#guards) in Chef resources.
