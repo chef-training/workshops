@@ -1,0 +1,6 @@
+john01 branch notes:-
+
+-) Made URL more prominient in slide 4 "Awesome Appliance Repair"
+-) Switched slide3 "Awesome Appliance Repair" and slide4 "Objectives"
+-) Added Slide "Defining Success - TISMTOWTDI"
+-) Added a few slides to get students started, and ensure everyone starts at same point & with the same general workflow. Using github so they can share/collaborate/demo during the class
