@@ -17,7 +17,7 @@
 * Start / Re-start the thin service
 
 
-## Commands
+## Installation Commands
 
 ```
 # Update apt-get
@@ -37,9 +37,11 @@ cd ruby-2.1.3
 make install
 rm -rf ~/ruby
 
-> had to run:
-> cp /usr/local/bin/ruby /usr/bin/ruby
-> cp /usr/local/bin/gem /usr/bin/gem
+# Ruby may install to /usr/local/bin
+#
+# So you may need to make copies of the core commands into /usr/bin
+# cp /usr/local/bin/ruby /usr/bin/ruby
+# cp /usr/local/bin/gem /usr/bin/gem
 
 # Install apache
 
@@ -92,6 +94,7 @@ service thin restart
 ```
 
 
+## /etc/apache2/sites-enabled/blog.conf
 
 ```
 # /etc/apache2/sites-enabled/blog.conf
@@ -120,6 +123,8 @@ ProxyRequests Off
 </VirtualHost>
 ```
 
+## /etc/thin/blog.yml
+
 ```
 # /etc/thin/blog.yml
 pid: tmp/pids/thin.pid
@@ -134,6 +139,8 @@ servers: 1
 address: 0.0.0.0
 daemonize: true
 ```
+
+## /etc/init.d/thin
 
 ```
 # /etc/init.d/thin
