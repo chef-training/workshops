@@ -62,9 +62,9 @@ apt-get install git
 
 # Clone the repo
 
-git clone https://github.com/gSchool/gschool-blog.git
+git clone https://github.com/learnchef/middleman-blog.git
 
-cd gschool-blog
+cd middleman-blog
 
 # Install Bundler
 
