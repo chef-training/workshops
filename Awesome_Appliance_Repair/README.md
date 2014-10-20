@@ -48,7 +48,7 @@ You can take expand on this project a number of ways including:
   * move the database to a separate node
   * add a load balancer and additional web server
 * Community Cookbooks - What cookbooks in the [Supermarket](http://supermarket.getchef.com) might help?
-* Multi-OS support - what changes are required to deploy the application to CentOS? 
+* Multi-OS support - what changes are required to deploy the application to CentOS?
 * Cloud deployment
   * Can you deploy this applicaiton to another infrastructure as a service environment?  (AWS, Azure, Rackspace, Digital Ocean, etc.)
 * Operationalize
@@ -61,13 +61,13 @@ You can take expand on this project a number of ways including:
 
 ## Examples of this project
 
-Here are some examples of this project being implemented by other workshop participants.  (See the "Contributing" section of the README for details on how to add your example.) 
+Here are some examples of this project being implemented by other workshop participants.  (See the "Contributing" section of the README for details on how to add your example.)
 
 * Cut-n-paste the AARinstall.py into a recipe, comment everything, add Chef resources.  [Nathen Harvey](https://github.com/nathenharvey/awesome_appliance_repair_chef/tree/round_00)
-* Working, but not repeatable implementation with Pull Requests that show additional work to make this better. [Franklin Webber](https://github.com/burtlo/chef-aar)
 * Another working but not repeatable implementation.  [John Fitzpatrick](https://github.com/johnfitzpatrick/aar)
 * Chef to manage pre-requisites and then run the AARinstall.py. [Elon Bar-Evan](https://github.com/elon01/aar)
 * A start with intentions on refactoring.  [Chris Webber](https://github.com/cwebberOps/aar-cookbook)
+* Starts from a [working](https://github.com/burtlo/chef-aar), but not repeatable implementation, all the way through to a solution with LWRP. Each further extension is defined on a separate branch and are represented as open [pull requests](https://github.com/burtlo/chef-aar/pulls). [Franklin Webber](https://github.com/burtlo/chef-aar)
 
 ## To Do
 
