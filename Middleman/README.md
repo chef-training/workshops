@@ -79,4 +79,4 @@ Here are some examples of this project being implemented by other workshop parti
 
 ## To Do
 
-None
+Create a presentation to illustrate learning goals, objectives, and discussions created by this content.
