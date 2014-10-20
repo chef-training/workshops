@@ -39,42 +39,44 @@ You'll know this project is complete when:
 You can take expand on this project a number of ways including:
 
 * Testing
-  * Use [Test Kitchen](http://kitchen.ci) to validate your chef-client runs.
-  * Add static code analysis using [Rubocop](https://github.com/bbatsov/rubocop) and [Food Critic](foodcritic.io).
-  * Add [ChefSpec](http://sethvargo.github.io/chefspec/) tests.
-  * Add [Serverspec](http://serverspec.org/) tests.
+  * Use [Test Kitchen](http://kitchen.ci) to validate your chef-client runs
+  * Add static code analysis using [Rubocop](https://github.com/bbatsov/rubocop) and [Food Critic](foodcritic.io)
+  * Add [ChefSpec](http://sethvargo.github.io/chefspec/) tests
+  * Add [Serverspec](http://serverspec.org/) tests
   * Add a continuous integration server, such as Jenkins
-* Multi-tier implementation
-  * move the database to a separate node
-  * add a load balancer and additional web server
-* Community Cookbooks - What cookbooks in the [Supermarket](http://supermarket.getchef.com) might help?
-* Multi-OS support - what changes are required to deploy the application to CentOS?
-* Cloud deployment
-  * Can you deploy this applicaiton to another infrastructure as a service environment?  (AWS, Azure, Rackspace, Digital Ocean, etc.)
-* Operationalize
-  * Add monitoring (nagios, sensu, etc.)
-  * Add central logging (splunk, logstash, etc.)
-  * Schedule database backups
-  * Add an additional database for replication (master / slave)
-* Applicaiton Deployments
-  * How do you deploy updates to the Awesome Appliance Repair application?
 
-## Examples of this project
+* Refactoring Recipes
+
+Typically recipes perform installation and configuration for a single application or a service of an application. Separate your single cookbook recipe into different recipes that focus on each of the different applications (e.g. installing ruby, installing apache, cloning the repo, installing dependencies, configuring/enabling the thin service).
+
+Use the [include_recipe](https://docs.getchef.com/essentials_cookbook_recipes.html#include-recipes) directive to ensure you load your dependencies.
+
+* Cookbook Extraction
+
+Cookbooks are best when they map 1:1 to a piece of software. The cookbook created here contains so much awesomeness across so many pieces of software. Separate the recipes in your single cookbook into multiple cookbooks (e.g. Apt-Get, Apache, Ruby, Git, Bundler)
+
+* Replace with [Community Cookbooks](http://supermarket.getchef.com)
+
+The community has created cookbooks that accomplish similar goals. Select a group of resources, recipe, or cookbook and replace it with the equivalent community cookbook.
+
+* [Light-Weight Resource Provider](https://docs.getchef.com/lwrp.html)
+
+Within your cookbook several resources that act in concert together can be grouped together as a recipe. Sometimes it makes sense to use a series of resources as a template. Light-Weight Resource Providers (LWRP) grant you that ability.
+
+Update your current resources, recipes, and cookbooks to implement a LWRP where it feels like you may want to use that same series of resources again with a different set of parameters.
+
+* Multi-OS support
+
+The installation instructions were defined for a CentOS Operating System (OS). Attempt a deployment on a node with a different OS. Update the resources, recipes, and cookbooks so that you can deploy on Ubuntu? Redhat? Amazon?
+
+## Examples
 
 Here are some examples of this project being implemented by other workshop participants.  (See the "Contributing" section of the README for details on how to add your example.)
 
-* Cut-n-paste the AARinstall.py into a recipe, comment everything, add Chef resources.  [Nathen Harvey](https://github.com/nathenharvey/awesome_appliance_repair_chef/tree/round_00)
-* Working, but not repeatable implementation with Pull Requests that show additional work to make this better. [Franklin Webber](https://github.com/burtlo/chef-aar)
-* Another working but not repeatable implementation.  [John Fitzpatrick](https://github.com/johnfitzpatrick/aar)
-* Chef to manage pre-requisites and then run the AARinstall.py. [Elon Bar-Evan](https://github.com/elon01/aar)
-* A start with intentions on refactoring.  [Chris Webber](https://github.com/cwebberOps/aar-cookbook)
+* Link to a repo with a description of the implementation details
+* Link to a repo with a description of the implementation details
+* Link to a repo with a description of the implementation details
 
 ## To Do
 
-* Add AARinstall.py scripts for additional operating systems
-  * CentOS
-  * Windows
-* Reimplement Awesome Appliance Repair in different languages
-  * .NET
-  * Java
-  * Ruby on Rails
+None
