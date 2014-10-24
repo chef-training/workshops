@@ -68,6 +68,8 @@ Here are some examples of this project being implemented by other workshop parti
 * Chef to manage pre-requisites and then run the AARinstall.py. [Elon Bar-Evan](https://github.com/elon01/aar)
 * A start with intentions on refactoring.  [Chris Webber](https://github.com/cwebberOps/aar-cookbook)
 * Starts from a [working](https://github.com/burtlo/chef-aar), but not repeatable implementation, all the way through to a solution with LWRP. Each further extension is defined on a separate branch and are represented as open [pull requests](https://github.com/burtlo/chef-aar/pulls). [Franklin Webber](https://github.com/burtlo/chef-aar)
+* Work in progress from the hack day following the Chef Community Summit in London 2014 - [Nathen Harvey](https://github.com/nathenharvey/london-aar-chef)
+* [Jose Luis Salas' work](https://github.com/josacar/chef-hack-day-london) following the Chef Community Summit in London 2014.
 
 ## To Do
 
