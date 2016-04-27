@@ -2,7 +2,7 @@
 
 [InSpec](http://github.com/chef/inspec) is an open-source testing framework for infrastructure with a human- and machine-readable language for specifying compliance, security and policy requirements.
 
-Your goal with this project is to write InSpec controls for a number of the CIS Ubuntu 14.04 LTS Server Benchmark profiles.
+Your goal with this project is to write InSpec controls for a number of the CIS CentOS Linux 6 Benchmark profiles.
 
 ## Objectives
 
