@@ -6,11 +6,11 @@
 $ sudo yum install java-1.7.0-openjdk-devel
 ```
 
-* Create the Tomcat User
+* Create the User
 
 ```
-$ sudo groupadd tomcat
-$ sudo useradd -M -s /bin/nologin -g tomcat -d /opt/tomcat tomcat
+$ sudo groupadd chef
+$ sudo useradd -g chef chef
 ```
 
 * Download the Tomcat Binary

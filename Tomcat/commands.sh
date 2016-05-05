@@ -5,15 +5,12 @@ echo "
 
 package 'java-1.7.0-openjdk-devel'
 
-group 'tomcat' do
+group 'chef' do
   action :create
 end
 
-user 'tomcat' do
-  manage_home false
-  shell '/bin/nologin'
-  group 'tomcat'
-  home '/opt/tomcat'
+user 'chef' do
+  group 'chef'
 end
 
 # remote_file '/tmp/apache-tomcat-8.0.33.tar.gz' do
@@ -30,10 +27,10 @@ execute 'extract_tomcat' do
   cwd '/tmp'
 end
 
-execute 'chgrp -R tomcat /opt/tomcat/conf'
+execute 'chgrp -R chef /opt/tomcat/conf'
 
 directory '/opt/tomcat/conf' do
-  group 'tomcat'
+  group 'chef'
   mode '0474'
 end
 
@@ -41,7 +38,7 @@ execute 'chmod g+r conf/*' do
   cwd '/opt/tomcat'
 end
 
-execute 'chown -R tomcat webapps/ work/ temp/ logs/' do
+execute 'chown -R chef webapps/ work/ temp/ logs/ conf/' do
   cwd '/opt/tomcat'
 end
 
