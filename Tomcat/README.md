@@ -4,7 +4,7 @@ The [Apache Tomcat®](http://tomcat.apache.org/) software is an open source impl
 
 ## Objectives
 
-The goal is to transform the installation instructions into one or more Chef recipes that will install and initialize the application.
+The goal is to transform the installation instructions into one or more Chef recipes that will install and initialize the Tomcat application.
 
 After successfully completing this workshop, you will be able to:
 
@@ -28,10 +28,10 @@ Before beginning you will need:
 ## Instructions
 
 * Use the ChefDK and text editor to develop and test your Chef code on your local workstation.
-* Use the instructions provided in the file `INSTRUCTIONS.md` and/or `workshop.pptx` to construct your Chef cookbook that mirrors the installation instructions. Use the Chef Resources reference to find the most appropriate Chef Resources to use for each task. [Chef resources reference][https://docs.chef.io/resources.html]
+* Use the instructions provided in the file `INSTRUCTIONS.md` and/or to construct your Chef cookbook that mirrors the installation instructions. Use the Chef Resources reference to find the most appropriate Chef Resources to use for each task. [Chef resources reference][https://docs.chef.io/resources.html]
 
 * There are a couple of ways that you can write, test and run your cookbook.
-  * Using the steps outlined [here](https://learn.chef.io/tutorials/local-development/rhel/), write and test your cookbook locally using Vagrant + Virtualbox
+  * Using the steps outlined [here](https://learn.chef.io/tutorials/local-development/rhel/), write and test your cookbook locally using Test Kitchen via Vagrant + Virtual Box, or the cloud platform of your choice.
   * Use your CentOS 7.0 (or later) virtual machine. Write your cookbook in vim, nano or emacs, and run `chef-client` in `--local-mode`.
 
 
@@ -46,11 +46,11 @@ You should be able to explain to your interviewer the following:
 * Why is Test-Driven Development important in this process?
 * How would you operationalize the testing process?
 * What are the benefits of the tools that you used while building this Tomcat server?
-* What is the benefit of using a cookbook template instead of copying the tomcat systemd unit file?
+* What is the benefit of using a cookbook template instead of copying the tomcat systemd unit file directly into your recipe or into a static file?
 
 You should be able to demonstrate the following:
 
-* Your Chef cookbook successfully compiles and executes on a target node
+* Your Chef cookbook successfully compiles and executes on your target node
 * You can interact with the tomcat site in a browser or successfully `curl localhost`
 * You can run chef-client multiple times without failures
 * Your source code repository shows the history of your work
@@ -62,8 +62,8 @@ You can expand on this project a number of ways including:
 * Testing
   * Add [Inspec](http://inspec.io/) tests
   * Add static code analysis using [Rubocop](https://github.com/bbatsov/rubocop) and [Food Critic](foodcritic.io)
-  * Add [ChefSpec](http://sethvargo.github.io/chefspec/) tests
+  * Add [ChefSpec](http://sethvargo.github.io/chefspec/) unit tests
 
-* Utilize in your cookbook [Community Cookbooks](http://supermarket.getchef.com)
+* Utilize community cookbooks inside of your cookbook [Community Cookbooks](http://supermarket.chef.io)
 
 The community has created cookbooks that accomplish similar goals. Select a group of resources, recipe, or cookbook and replace it with the equivalent community cookbook.
