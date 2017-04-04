@@ -1,6 +1,7 @@
 # Remediation
 
-[Chef Compliance](https://www.chef.io/compliance/) provides a number of Compliance Profiles that can be used to check a number of controls across your infrastructure.
+[Chef Inspec](inspec.io) provides a number of Compliance Profiles that can be used to check a number of controls across your infrastructure.
+You can find a guide for this process [here](https://learn.chef.io/tutorials/compliance-assess/)
 
 Your goal with this project is to scan a node using one or more profiles and remediate any violations using Chef.
 
@@ -23,10 +24,10 @@ After successfully completing this workshop, you will be able to:
 * Please track and share your work in a git repository
 
 
-1.  Login to the Chef Compliance server
-1.  Add the node to be scanned
-1.  Scan the node and note the failing controls
-1.  Write cookbooks to remediate the failing controls
-1.  Execute the cookbooks on the node
-1.  Scan to verify remediation
-1.  Fix one thing at a time
+* Login to the Chef Compliance server
+* Add the node to be scanned
+* Scan the node and note the failing controls
+* Write cookbooks to remediate the failing controls
+* Execute the cookbooks on the node
+* Scan to verify remediation
+* Fix one thing at a time

@@ -15,11 +15,11 @@ $ sudo useradd -g chef chef
 
 * Download the Tomcat Binary
 
-> NOTE: A specific binary will be mentioned below but it will likely be out of date. You can find the binaries for Tomcat 8 here at http://mirror.sdunix.com/apache/tomcat/tomcat-8/
+> NOTE: A specific binary will be mentioned below but it will likely be out of date. You can find the binaries for Tomcat 8 here at https://archive.apache.org/dist/tomcat/tomcat-8/
 
 ```
 $ cd /tmp
-$ wget http://mirror.sdunix.com/apache/tomcat/tomcat-8/v8.0.33/bin/apache-tomcat-8.0.33.tar.gz
+$ wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.33/
 ```
 
 * Extract the Tomcat Binary

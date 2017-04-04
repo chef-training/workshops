@@ -15,6 +15,9 @@ Great projects:
 
 * Awesome Appliance Repair - A simple, python-based web application that utilizes Apache for a web server and MySQL for a database.
 * Install MongoDB - A starter project for MongoDB.  This simply installs the software on the target system.
+* Middleman - A static site generator using all the shortcuts and tools in modern web development. It is a ruby (sinatra) application.
+* Remediation Workshop - Use [Chef Inspec](inspec.io) to test and remediate a system.
+* Tomcat - A simple installation and configuration of an Apache web page.
 
 ## Contributing
 
@@ -23,6 +26,7 @@ Pull requests are merged via Github, you can find the documentation about how to
 ## License & Authors
 
 Author:: Nathen Harvey (<nharvey@getchef.com>)
+Author:: Nicole Johnson (<nj@chef.io>)
 
 
 Copyright:: 2014 Chef Software, Inc.
