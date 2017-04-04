@@ -39,14 +39,11 @@ Before beginning you will need:
 
 Store your work in a Github repository.
 
-You should be able to explain to your interviewer the following:
+You should be able to explain the following:
 
-* What are the steps you took to achieve the end result? How might you improve your cookbook?
-* How did you build and test your Chef code? How might you improve your testing?
-* Why is Test-Driven Development important in this process?
-* How would you operationalize the testing process?
-* What are the benefits of the tools that you used while building this Tomcat server?
-* What is the benefit of using a cookbook template instead of copying the tomcat systemd unit file directly into your recipe or into a static file?
+* Steps taken to achieve the end result.
+* Build and test process of Chef code.
+* Tools used in the process.
 
 You should be able to demonstrate the following:
 
