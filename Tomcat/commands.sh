@@ -14,7 +14,7 @@ user 'chef' do
 end
 
 # remote_file '/tmp/apache-tomcat-8.0.33.tar.gz' do
-#   source 'http://mirror.sdunix.com/apache/tomcat/tomcat-8/v8.0.33/bin/apache-tomcat-8.0.33.tar.gz'
+#   source 'https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.33/'
 # end
 
 directory '/opt/tomcat' do

@@ -4,73 +4,63 @@ The [Apache Tomcat®](http://tomcat.apache.org/) software is an open source impl
 
 ## Objectives
 
-The goal is to transform the installation instructions into one or more Chef recipes that will install and initialize the application.
+The goal is to transform the installation instructions into one or more Chef recipes that will install and initialize the Tomcat application.
 
 After successfully completing this workshop, you will be able to:
 
-* Build something in Chef with very little guidance
-* Write custom Chef recipes.
-* Use the [Chef Documentation](http://docs.opscode.com) to identify and use resources that will help you model the desired state of your infrastructure.
-* Include [guards](http://docs.getchef.com/chef/resources.html#guards) in Chef resources.
+* Install and configure a basic Tomcat webpage using Chef.
+* Use the [Chef Documentation](http://docs.chef.io) to identify and use resources that will help you model the desired state of your infrastructure.
+* Include [guards](https://docs.chef.io/resources.html#guards) in Chef resources.
 
 ## Pre-requisites
 
 Before beginning you will need:
 
-* A virtual machine or server running CentOS 7.0 or later
 * Some experience using Chef such as:
-  * completing the exercises on [Learn Chef](http://learn.chef.io)
+  * completing the exercises on [Learn Chef](http://learn.chef.io/tutorials)
   * completing a Chef Essentials workshop
   * real-world experience working with Chef
-* Chef DK or chef-client installed
-* A text editor
-* A version control system
+* Chef DK or chef-client installed on your local workstation to develop and test your Chef code.
+* A text editor (i.e. Atom, SublimeTest, VisualStudio Code)
+* A version control system (i.e. Github)
+* A virtual machine running CentOS 7.0 or later
+
+## Instructions
+
+* Use the ChefDK and text editor to develop and test your Chef code on your local workstation.
+* Use the instructions provided in the file `INSTRUCTIONS.md` and/or to construct your Chef cookbook that mirrors the installation instructions. Use the Chef Resources reference to find the most appropriate Chef Resources to use for each task. [Chef resources reference][https://docs.chef.io/resources.html]
+
+* There are a couple of ways that you can write, test and run your cookbook.
+  * Using the steps outlined [here](https://learn.chef.io/tutorials/local-development/rhel/), write and test your cookbook locally using Test Kitchen via Vagrant + Virtual Box, or the cloud platform of your choice.
+  * Use your CentOS 7.0 (or later) virtual machine. Write your cookbook in vim, nano or emacs, and run `chef-client` in `--local-mode`.
+
 
 ## Completion Criteria
 
-You'll know this project is complete when:
+Store your work in a Github repository.
 
-* You can interact with the tomcat site in a browser
+You should be able to explain the following:
+
+* Steps taken to achieve the end result.
+* Build and test process of Chef code.
+* Tools used in the process.
+
+You should be able to demonstrate the following:
+
+* Your Chef cookbook successfully compiles and executes on your target node
+* You can interact with the tomcat site in a browser or successfully `curl localhost`
 * You can run chef-client multiple times without failures
 * Your source code repository shows the history of your work
 
 ## Next steps
 
-You can take expand on this project a number of ways including:
+You can expand on this project a number of ways including:
 
 * Testing
-  * Use [Test Kitchen](http://kitchen.ci) to validate your chef-client runs
+  * Add [Inspec](http://inspec.io/) tests
   * Add static code analysis using [Rubocop](https://github.com/bbatsov/rubocop) and [Food Critic](foodcritic.io)
-  * Add [ChefSpec](http://sethvargo.github.io/chefspec/) tests
-  * Add [Serverspec](http://serverspec.org/) tests
-  * Add a continuous integration server, such as Jenkins
+  * Add [ChefSpec](http://sethvargo.github.io/chefspec/) unit tests
 
-* Refactoring Recipes
-
-Typically recipes perform installation and configuration for a single application or a service of an application. Separate your single cookbook recipe into different recipes that focus on each of the different applications (e.g. installing ruby, installing apache, cloning the repo, installing dependencies, configuring/enabling the thin service).
-
-Use the [include_recipe](https://docs.getchef.com/essentials_cookbook_recipes.html#include-recipes) directive to ensure you load your dependencies.
-
-* Cookbook Extraction
-
-Cookbooks are best when they map 1:1 to a piece of software. The cookbook created here contains so much awesomeness across so many pieces of software. Separate the recipes in your single cookbook into multiple cookbooks (e.g. Apt-Get, Apache, Ruby, Git, Bundler)
-
-* Replace with [Community Cookbooks](http://supermarket.getchef.com)
+* Utilize community cookbooks inside of your cookbook [Community Cookbooks](http://supermarket.chef.io)
 
 The community has created cookbooks that accomplish similar goals. Select a group of resources, recipe, or cookbook and replace it with the equivalent community cookbook.
-
-* [Light-Weight Resource Provider](https://docs.getchef.com/lwrp.html)
-
-Within your cookbook several resources that act in concert together can be grouped together as a recipe. Sometimes it makes sense to use a series of resources as a template. Light-Weight Resource Providers (LWRP) grant you that ability.
-
-Update your current resources, recipes, and cookbooks to implement a LWRP where it feels like you may want to use that same series of resources again with a different set of parameters.
-
-* Multi-OS support
-
-The installation instructions were defined for a CentOS Operating System (OS). Attempt a deployment on a node with a different OS. Update the resources, recipes, and cookbooks so that you can deploy on Ubuntu? Redhat? Amazon?
-
-## Examples
-
-Here are some examples of this project being implemented by other workshop participants.  (See the "Contributing" section of the README for details on how to add your example.)
-
-* Submit your link to a repo with a description of the implementation details
