@@ -2,15 +2,16 @@
 
 ## Instructions
 
-Complete the mandatory workshops below. These may be completed in any order, but it the recommendation is `1_MongoDB` then `2_Tomcat`.
+Complete the mandatory workshops below. These may be completed in any order, but it the recommendation is `1_MongoDB`, `2_Tomcat`, and then `4_Windows`.
 
 * `1_MongoDB`
 * `2_Tomcat`
 * `3_Bonus`
+* `4_Windows`
 
 Each workshop includes instructions stating the goal of the workshop, the success criteria, and, in some cases, basic instructions.  Basic instructions are provided with the understanding that those executing the workshops may not have any practical experience with the specific technologies involved.
 
-If the first two workshops are completed successfully, additional bonus material from `3_Bonus` may be completed.  This is extra credit material and additional consideration will be given if it is attempted and/or completed successfully.
+If the `1_MongoDB`,`2_Tomcat` and `4_Windows` workshops are completed successfully, additional bonus material from `3_Bonus` may be completed.  This is extra credit material and additional consideration will be given if it is attempted and/or completed successfully.
 
 ## Expectations
 
@@ -33,6 +34,7 @@ There are no correct or incorrect working solutions to each of the workshops.  I
   * Expand the functionality of the previous two workshops
     * Awesome Appliance Repair - A simple, python-based web application that utilizes Apache for a web server and MySQL for a database.
     * Middleman - A static site generator using all the shortcuts and tools in modern web development. It is a ruby (sinatra) application.
+* **4_Windows:** Write inspec tests to audit windows 2019 servers and write a cookbook to remediate all tests give in the attached PDF.
 
 ## Pre-requisites
 
@@ -45,7 +47,7 @@ You will need some experience using Chef such as:
 
 You will also need to install a few pieces of software on your local workstation:
 
-* The [ChefDK](https://downloads.chef.io/chefdk) to develop and test your Chef code.
+* The [Chef Workstation](https://downloads.chef.io/products/workstation) to develop and test your Chef code.
 * A text editor to create and edit your Chef code (i.e. [Atom](https://atom.io), [VisualStudio Code](https://code.visualstudio.com), [SublimeText](https://www.sublimetext.com), or other)
 * A free [GitHub.com](https://github.com) account to upload your work
 * A virtual machine running a RHEL7 (or later) based linux distribution (RHEL, CentOS, Fedora, etc.) to serve as a test system

@@ -27,17 +27,17 @@ You should be able to explain the following:
 ## Instructions
 
 * Translate the Tomcat installation instructions from `INSTRUCTIONS.rb` into Chef code that completes the installation and configuration
-* Use the Chef [Resources Reference](https://docs.chef.io/resources.html) to find the most appropriate Chef resources to use for each task
+* Use the Chef [Resources Reference](https://docs.chef.io/resources/) to find the most appropriate Chef resources to use for each task
 * Once you feel you have met the success criteria outlined above, send a link to your GitHub.com repo to the person coordinating these workshops on your behalf
 * Provide instructions for us to run your cookbook so that we can test your work.
 
 There are a couple of ways that you can write, test and run your cookbook.
 
 * Write and test your cookbook locally using Test Kitchen via Vagrant + Virtual Box, or the cloud platform of your choice.
-  * Steps for this option are outlined [here](https://learn.chef.io/tutorials/local-development/)
+  * Steps for this option are outlined [here](https://learn.chef.io/courses/course-v1:chef+LocalDev101+Perpetual/course/)
 * Develop directly on your RHEL-based virtual machine
   * Write your cookbook in vim, nano or emacs, and run `chef-client` in `--local-mode`
-  * The ChefDK or Chef Client must be installed on the VM first
+  * The Chef Workstation or Chef Client must be installed on the VM first
 
 ## Suggested Resources
 
