@@ -39,7 +39,7 @@ There are a couple of ways that you can write, test and run your cookbook.
   * Steps for this option are outlined [here](https://learn.chef.io/tutorials/local-development/)
 * Develop directly on your Ubuntu-based virtual machine
   * Write your cookbook in vim, nano or emacs, and run `chef-client` in `--local-mode`
-  * The ChefDK or Chef Client must be installed on the VM first
+  * The Chef Workstation or Chef Client must be installed on the VM first
 
 ## Suggested Resources
 
